@@ -6,6 +6,7 @@ The goal is to understand how each side goes about different kind of analysis an
 
 # Index
 
+* [Simple Linear Regression](SimpleLinearRegression)
 * [Aerobic Fitness Prediction](AerobicFitnessPrediction)
 
 
