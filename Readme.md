@@ -33,6 +33,7 @@ Source: https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/v
 ### HPCC results
 
 **Analysis of variance**:
+
 | Source | DF | Sum of Squares | Mean Square | F Value | Pr > F |
 | ------ | -- | -------------- | ----------- | ------- | ------ |
 | Model | 3 | 690.5508562698315 | 230.1836187566105 | 38.64285952967916 |  |
@@ -40,6 +41,7 @@ Source: https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/v
 | Corrected Total | 30 | 851.3815448387031 | | |
 
 **Parameter Estimates**:
+
 | Variable | Parameter Estimate | Standard Error | Type II SS | F Value | Pr > F |
 | -------- | ------------------ | -------------- | ---------- | ------- | ------ |
 | Intercept | 111.7180644300601 | 10.2350883564144 |  |  |  |
