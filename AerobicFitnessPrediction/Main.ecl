@@ -1,4 +1,5 @@
 ﻿IMPORT ML;
+IMPORT AerobicFitnessPrediction AS AFR;
 
 /* 
 	===================================================================================
@@ -169,15 +170,11 @@ X := oFields( Number IN [ 1, 2, 4, 6, 5, 7 ] ); // Age, Weight, RunTime, RunPuls
 Y := oFields( Number IN [ 3 ] ); // Oxygen
 
 // Forward model-selection method
+
 ForwardReg := ML.StepRegression.ForwardRegression( X, Y );
 ForwardModel := ForwardReg.BestModel;
 report_on_parameters( ForwardModel, oFields );
 report_on_variance( ForwardModel, oFields );
 report_on_misc( ForwardModel, oFields );
-/*
-OUTPUT( ForwardReg.BestModel.Betas, NAMED('ForwardBestModel') );
-OUTPUT( ForwardReg.BestModel.Anova, NAMED('ForwardBestAnova') );
-OUTPUT( ForwardReg.BestModel.Anova, NAMED('ForwardBestAnova') );
-*/
 
 OUTPUT( ForwardReg.Steps, NAMED('ForwardSteps') );
